@@ -37,7 +37,7 @@ function App() {
             <div className='color-item bg-purple' onClick={()=>{setEmojiColor("purple")}}></div>
             <div className='color-item bg-pink' onClick={()=>{setEmojiColor("pink")}}></div>
             <div className='color-item bg-yellow' onClick={()=>{setEmojiColor("yellow")}}></div>
-            <div className='color-item bg-black' onClick={()=>{setEmojiColor("black")}}></div>
+            <div className='color-item bg-orange' onClick={()=>{setEmojiColor("orange")}}></div>
           </div>
 
           <div className='size-container'>
