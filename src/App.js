@@ -16,8 +16,8 @@ function App() {
 
       <div className='emoji-editor-container'>
         <div>
-          <div className='main-emoji-container' style={{backgroundColor: emojiColor, transform: `rotate(${emojiDeg*3.6}deg)`}}>
-            <div className='main-emoji' style={{fontSize: `${emojiSize * 2}px`}}>
+          <div className='main-emoji-container' style={{ backgroundColor: emojiColor, transform: `rotate(${emojiDeg * 3.6}deg)` }}>
+            <div className='main-emoji' style={{ fontSize: `${emojiSize * 2}px` }}>
               {emoji}
             </div>
           </div>
@@ -33,19 +33,19 @@ function App() {
 
         <div>
           <div className='colors-container'>
-            <div className='color-item bg-red' onClick={()=>{setEmojiColor("red")}}></div>
-            <div className='color-item bg-purple' onClick={()=>{setEmojiColor("purple")}}></div>
-            <div className='color-item bg-pink' onClick={()=>{setEmojiColor("pink")}}></div>
-            <div className='color-item bg-yellow' onClick={()=>{setEmojiColor("yellow")}}></div>
-            <div className='color-item bg-orange' onClick={()=>{setEmojiColor("orange")}}></div>
+            <div className='color-item bg-red' onClick={() => { setEmojiColor("red") }}></div>
+            <div className='color-item bg-purple' onClick={() => { setEmojiColor("purple") }}></div>
+            <div className='color-item bg-pink' onClick={() => { setEmojiColor("pink") }}></div>
+            <div className='color-item bg-yellow' onClick={() => { setEmojiColor("yellow") }}></div>
+            <div className='color-item bg-orange' onClick={() => { setEmojiColor("orange") }}></div>
           </div>
 
           <div className='size-container'>
-            <input type="range" className='size-slider' onChange={(e)=>{setEmojiSize(e.target.value)}}/>
+            <input type="range" className='size-slider' onChange={(e) => { setEmojiSize(e.target.value) }} />
           </div>
 
           <div className='size-container'>
-            <input type="range" className='size-slider' onChange={(e)=>{setEmojiDeg(e.target.value)}}/>
+            <input type="range" className='size-slider' onChange={(e) => { setEmojiDeg(e.target.value) }} />
           </div>
         </div>
       </div>
